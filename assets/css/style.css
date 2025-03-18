@@ -1,0 +1,115 @@
+/* BASE */
+:root{
+    --purple-color: #7342F7;
+    --primary-color: #00a4fc;
+    --btn-color: #D24559;
+    --border-bottom-shadow: 0 2px 4px rgba(6, 17, 118, .08), 0 4px 12px rgba(6, 17, 118, .08);
+}
+/* Tạo background trong suốt cho navbar */
+.blur-filter{
+    backdrop-filter: blur(8px);
+    /* background-color: rgb(255 255 255 / 30%); */
+    background-color: transparent;
+}
+
+.btn-purple{
+    background-color: var(--purple-color);
+    border-radius: 3px;
+    padding: 8px;
+    text-decoration: none;
+    transition: opacity .2s;
+}
+.btn-purple:hover{
+    opacity: .8;
+}
+
+/* NAVBAR */
+.navbar{
+    box-shadow: var(--border-bottom-shadow);
+}
+
+.navbar-brand img{
+    width: 100px;
+    height: auto;
+}
+
+.nav-item{
+    margin: 0 10px 0 10px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-left: 0;
+    padding-right: 0;
+}
+/* Đổi màu khi hover Navbar */
+.nav-link:hover{
+    transition: .25s ease;
+    color: var(--btn-color); 
+    box-shadow: 0 2px 0 0 currentColor;
+    padding-left: 0;
+    padding-right: 0;
+}
+/* Line màu đỏ dưới Nav */
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: var(--btn-color);
+    box-shadow: 0 2px 0 0 currentColor;
+}
+
+
+/* BEGIN HEADER */
+.main-header{
+    padding-top: 120px;
+}
+
+
+
+/* BEGIN SITE FEATURE */
+.feature-item__icon{
+    width: 50px;
+    height: auto;
+}
+
+
+/* BEGIN COURSES */
+.badge{
+    background-color: var(--btn-color);
+}
+.course-item__price{
+    background-color: var(--primary-color);
+}
+
+
+/* BEGIN SUBCRIBE */
+.subscribe{
+    background-image: url(../img/background.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+/* BEGIN FOOTER */
+.brand-icon img{
+    width: 150px;
+    height: auto;
+}
+.footer-heading{
+    margin-bottom: 12px;
+}
+
+.footer-item{
+    margin-bottom: 4px;
+}
+.footer-item:hover{
+    text-decoration: underline;
+}
+
+/* COPYRIGHT */
+.copyright{
+    background-color: #000;
+}
+
+.copyright a{
+    color: var(--btn-color);
+}
+
+/* STICKY FOOTER */
+

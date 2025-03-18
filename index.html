@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Thay href = "link ảnh" sẽ hiển thị ảnh trên web -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/BMO.png">
+    <!-- <link rel="stylesheet" href="./bootstrap-5.3.3/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Link Fontawsome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Bootstrap Project</title>
+</head>
+
+<body class="bg-light">
+    <!-- BEGIN NAVBAR -->
+    <nav class="fixed-top navbar navbar-expand-lg blur-filter border-bottom small">
+        <div class="container">
+            <!-- Navbar Brand -->
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/adventure-time.png" alt="logo" width="30" height="24">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Menu Item -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Search Form -->
+                <form class="d-flex mb-2 mb-lg-0" role="search">
+                    <div class="input-group">
+                        <input class="form-control form-control-sm border border-2 ps-2" type="search"
+                            placeholder="Search for anything" aria-label="Search">
+                        <button class="btn-sm btn btn-success me-2" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Sign In & Login Buttons -->
+                <!-- Sử dụng d-flex và flex-column để responsive -->
+                <div class="d-flex flex-column flex-md-row gap-2 mb-2 mb-lg-0">
+                    <a href="#!" class=" btn btn-sm btn-outline-danger fw-semibold">
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                        Log in
+                    </a>
+                    <a href="#!" class="btn-sm btn btn-danger fw-semibold ">
+                        <i class="fa-solid fa-user-plus" style="color: #ffffff;"></i>
+                        Sign up
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+
+    <!-- BEGIN HEADER -->
+    <header class="main-header pb-5 border-bottom">
+        <div class="container">
+            <div class="row align-items-center gx-md-5">
+                <!-- Left Col -->
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h1 class="fs-3 fw-normal">Frontend Development using React</h1>
+                    <p class="mb-2 fs-5 fw-light text-secondary">Welcome to the Frontend Development using React course!
+                        In this program, you will learn the fundamentals of frontend development and how to build web
+                        applications using the React library. <br>
+                        The course is best suitable for people with familiarity with web development. </p>
+                    <a href="#!" class="btn-sm btn btn-outline-danger fw-semibold ">
+                        <i class="fa-solid fa-user-check"></i>
+                        Sign up to get started
+                    </a>
+                </div>
+
+                <!-- Right Col -->
+                <div class="col-md-6">
+                    <img class="rounded w-100" src="./assets/img/front-end-dev.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+
+    <!-- SITE FEATURES -->
+    <section class="py-4 border-bottom">
+        <div class="container">
+            <div class="row">
+                <!-- Item 1 -->
+                <div class="col-md-4">
+                    <div class="feature-item bg-white border rounded p-3 d-flex align-items-center">
+                        <div>
+                            <img class="feature-item__icon" src="./assets/img/react-icon.png" alt="">
+                        </div>
+                        <div class="ms-3">
+                            <h3 class="fs-5">ReactJS</h3>
+                            <p class="small text-secondary">
+                                React for Frontend Development, you will dive into React, a popular JavaScript library
+                                for building user interfaces.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="col-md-4">
+                    <div class="feature-item bg-white my-3 my-md-0 border rounded p-3 d-flex align-items-center">
+                        <div>
+                            <img class="feature-item__icon" src="./assets/img/responsive-icon.png" alt="">
+                        </div>
+                        <div class="ms-3">
+                            <h3 class="fs-5">Responsive</h3>
+                            <p class="small text-secondary">
+                                You will learn how to make your web page designs adapt to different screen sizes using
+                                responsive grid layouts.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="col-md-4">
+                    <div class="feature-item bg-white border rounded p-3 d-flex align-items-center">
+                        <div>
+                            <img class="feature-item__icon" src="./assets/img/bootstrap-icon.png" alt="">
+                        </div>
+                        <div class="ms-3">
+                            <h3 class="fs-5">Bootstrap</h3>
+                            <p class="small text-secondary">
+                                This course is for anyone that wants to learn how to build modern websites and UIs using
+                                the Bootstrap CSS framework.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- END SITE FEATURES -->
+
+
+    <!-- BEGIN COURSES -->
+    <section class="py-4 border-bottom">
+        <div class="container">
+            <!-- Top Row -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-5">
+                    <div class="text-md-center">
+                        <h4 class="fs-5">Learn Complete Modern Front-End Web Development Step-by-Step</h4>
+                        <p class="small text-secondary">Master the essentials of Front-End web development with HTML5,
+                            CSS3, Modern JavaScript, Bootstrap 5, Angular, and React</p>
+                        <a href="#!" class="btn-sm btn btn-success fw-semibold ">
+                            <i class="fa-solid fa-graduation-cap" style="color: #ffffff;"></i>
+                            View all courses
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Course Row -->
+            <div class="row">
+                <!-- Category & Topic -->
+                <div class="col-md-3">
+                    <div class="list-group">
+                        <div class="list-group-item text-bg-light fw-bold">Course Categories</div>
+                        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Premium Courses
+                            <span class="badge rounded-pill">14</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Free Courses
+                            <span class="badge rounded-pill">5</span>
+                        </a>
+                    </div>
+                    <div class="list-group mt-3">
+                        <div class="list-group-item text-bg-light fw-bold">Course by Topics</div>
+                        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Front-End
+                            <span class="badge rounded-pill">6</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Back-End
+                            <span class="badge rounded-pill">5</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Web Design
+                            <span class="badge rounded-pill">3</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Databases
+                            <span class="badge rounded-pill">3</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- List of courses -->
+                <div class="col-md-9">
+                    <div class="list-group mt-3 mt-md-0">
+                        <div
+                            class="list-group-item text-bg-light fw-bold d-flex justify-content-between align-items-center">
+                            List of all courses
+                            <span class="badge rounded-pill">24 Courses Available</span>
+                        </div>
+                        <!-- Course 1 -->
+                        <a href="./single-course.html" class="list-group-item list-group-item-action ">
+                            <div class="row align-items-center">
+                                <!-- Course Image -->
+                                <div class="col-md-4">
+                                    <div class="">
+                                        <img class="rounded img-fluid" src="./assets/img/fullstack.jpg" alt="">
+                                    </div>
+                                </div>
+                                <!-- Description -->
+                                <div class="col-md-8">
+                                    <h5 class="mt-3 mt-md-0">The Complete Full-Stack Web Development Bootcamp</h5>
+                                    <p class="text-secondary">
+                                        Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript,
+                                        Node, React, PostgreSQL, Web3 and DApps
+                                    </p>
+                                    <div class="course-item__info d-inline-flex align-items-center">
+                                        <span class="py-2 rounded-pill badge me-2 d-inline-flex align-items-center">
+                                            <i class="fa-solid fa-star me-1"></i>
+                                            Rating: 4.4
+                                        </span>
+                                        <span class="py-2 rounded-pill badge course-item__price">
+                                            Price: $110
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- Course 2 -->
+                        <a href="./single-course.html" class="list-group-item list-group-item-action ">
+                            <div class="row align-items-center">
+                                <!-- Course Image -->
+                                <div class="col-md-4">
+                                    <div class="">
+                                        <img class="rounded img-fluid" src="./assets/img/front-end-dev.jpg" alt="">
+                                    </div>
+                                </div>
+                                <!-- Description -->
+                                <div class="col-md-8">
+                                    <h5 class="mt-3 mt-md-0">Frontend Development using React</h5>
+                                    <p class="text-secondary">
+                                        React for Frontend Development, you will dive into React, a popular JavaScript
+                                        library for building user interfaces. You will learn how to set up a React
+                                        project, create components, and manage state in your application.
+                                    </p>
+                                    <div class="course-item__info d-inline-flex align-items-center">
+                                        <span class="py-2 rounded-pill badge me-2 d-inline-flex align-items-center">
+                                            <i class="fa-solid fa-star me-1"></i>
+                                            Rating: 4.4
+                                        </span>
+                                        <span class="py-2 rounded-pill badge course-item__price">
+                                            Price: $110
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- Course 3 -->
+                        <a href="./single-course.html" class="list-group-item list-group-item-action ">
+                            <div class="row align-items-center">
+                                <!-- Course Image -->
+                                <div class="col-md-4">
+                                    <div class="">
+                                        <img class="rounded img-fluid" src="./assets/img/nodejs.jpg" alt="">
+                                    </div>
+                                </div>
+                                <!-- Description -->
+                                <div class="col-md-8">
+                                    <h5 class="mt-3 mt-md-0">Node.js & MongoDB: Developing Back-end Database Applications</h5>
+                                    <p class="text-secondary">
+                                        Learn how to construct RESTful APIs using Node.js and the Express framework to
+                                        communicate with NoSQL databases like MongoDB.
+                                    </p>
+                                    <div class="course-item__info d-inline-flex align-items-center">
+                                        <span class="py-2 rounded-pill badge me-2 d-inline-flex align-items-center">
+                                            <i class="fa-solid fa-star me-1"></i>
+                                            Rating: 4.4
+                                        </span>
+                                        <span class="py-2 rounded-pill badge course-item__price">
+                                            Price: $110
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- Course 4 -->
+                        <a href="./single-course.html" class="list-group-item list-group-item-action ">
+                            <div class="row align-items-center">
+                                <!-- Course Image -->
+                                <div class="col-md-4">
+                                    <div class="">
+                                        <img class="rounded img-fluid" src="./assets/img/bootstrap-theme.jpg" alt="">
+                                    </div>
+                                </div>
+                                <!-- Description -->
+                                <div class="col-md-8">
+                                    <h5 class="mt-3 mt-md-0">Developing Websites and Front-Ends with Bootstrap</h5>
+                                    <p class="text-secondary">
+                                        Building flexible, fast, and responsive websites and front-ends with a
+                                        consistent look and feel has become a basic requirement. As a front-end
+                                        developer, it is important that you know at least one front-end framework.
+                                    </p>
+                                    <div class="course-item__info d-inline-flex align-items-center">
+                                        <span class="py-2 rounded-pill badge me-2 d-inline-flex align-items-center">
+                                            <i class="fa-solid fa-star me-1"></i>
+                                            Rating: 4.4
+                                        </span>
+                                        <span class="py-2 rounded-pill badge course-item__price">
+                                            Price: $110
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- Course 5 -->
+                        <a href="./single-course.html" class="list-group-item list-group-item-action ">
+                            <div class="row align-items-center">
+                                <!-- Course Image -->
+                                <div class="col-md-4">
+                                    <div class="">
+                                        <img class="rounded img-fluid" src="./assets/img/javascript.jpg" alt="">
+                                    </div>
+                                </div>
+                                <!-- Description -->
+                                <div class="col-md-8">
+                                    <h5 class="mt-3 mt-md-0">Mastering Javascript</h5>
+                                    <p class="text-secondary">
+                                        The modern JavaScript course for everyone! Master JavaScript with projects,
+                                        challenges and theory. Many courses in one!
+                                    </p>
+                                    <div class="course-item__info d-inline-flex align-items-center">
+                                        <span class="py-2 rounded-pill badge me-2 d-inline-flex align-items-center">
+                                            <i class="fa-solid fa-star me-1"></i>
+                                            Rating: 4.4
+                                        </span>
+                                        <span class="py-2 rounded-pill badge course-item__price">
+                                            Price: $110
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- END COURSES -->
+
+
+    <!-- BEGIN OTHER CONTENT -->
+    <section class="other-content py-4 border-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Col -->
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h3 class="fs-5">Free Lightweight Tailwind Component Libraries (No JS)</h3>
+                    <p class="fw-normal text-secondary">Discover the top 7 lightweight Tailwind CSS component libraries that
+                        require no JavaScript. These libraries offer customizable, responsive UI components to
+                        streamline your development process and create professional, consistent designs quickly and
+                        efficiently.
+                    </p>
+
+                    <h3 class="fs-5">Why Use Tailwind Components Libraries?</h3>
+                    <p class="fw-normal text-secondary">Using pre-built Tailwind components libraries saves developers
+                        significant time and effort.
+                        These libraries offer ready-to-use UI elements that are easy to integrate and customize,
+                        ensuring a cohesive look and feel across your application.
+                        Besides, they eliminate the need for writing repetitive code, allowing developers to focus on
+                        building unique features.</p>
+                    <a class="fw-semibold btn-purple text-white" href="#">
+                        <i class="me-2 fa-solid fa-circle-info"></i>
+                        Sign up to get more info
+                    </a>
+                </div>
+                <!-- Right Col -->
+                <div class="col-md-6">
+                    <img class="rounded w-100" src="./assets/img/tailwind.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OTHER CONTENT -->
+
+
+    <!-- BEGIN SUBSCRIBE -->
+    <section class="subscribe py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="mb-3 mb-md-0 text-white text-center text-md-end">
+                        <h5 class="fs-4 fw-normal">Subscribe for newsletters</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <!-- Subscribe Form -->
+                    <form class="d-flex mb-2 mb-lg-0" role="search">
+                        <div class="input-group">
+                            <input type="email" class="form-control form-control-sm" placeholder="Your Email">
+                            <button type="submit" class="btn btn-sm btn-success d-inline-flex align-items-center">
+                                <i class="me-1 fa-solid fa-envelope-circle-check"></i>
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SUBSCRIBE -->
+
+
+    <!-- BEGIN FOOTER -->
+    <footer class="text-bg-dark py-5">
+        <div class="container">
+            <div class="row ">
+                <!-- Icon & Address -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="brand-icon mb-2">
+                        <img src="./assets/img/adventure-time.png" alt="">
+                    </div>
+                    <address class="small text-secondary">
+                        Hue University of Sciences,<br> Hue City, VietNam.
+                    </address>
+                    <p class="small text-secondary">rupertinfgct@gmail.com</p>
+                </div>
+                <!-- Web Dev -->
+                <div class="col-md-2 col-sm-6">
+                    <h6 class="footer-heading">Web Development</h6>
+                    <ul class="list-unstyled small">
+                        <li class="footer-item">
+                            <a class="text-decoration-none text-secondary" href="">JavaScript</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="text-decoration-none text-secondary" href="">ReactJS</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="text-decoration-none text-secondary" href="">NodeJS</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="text-decoration-none text-secondary" href="">Bootstrap</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="text-decoration-none text-secondary" href="">MongoDB</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Data Science -->
+                <div class="col-md-2 col-sm-6">
+                    <h6 class="footer-heading">Data Science</h6>
+                    <ul class="list-unstyled small">
+                        <li class="footer-item">
+                            <a class="text-decoration-none text-secondary" href="">Python</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="text-decoration-none text-secondary" href="">Machine Learning</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="text-decoration-none text-secondary" href="">GenAI</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="text-decoration-none text-secondary" href="">Deep Learning</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Follow -->
+                <div class="col-md-5 col-sm-6">
+                    <h6 class="footer-heading">Follow Us</h6>
+                    <div class="">
+                        <a class="mb-2 d-inline-flex align-items-center btn btn-sm px-md-3 btn-info rounded-pill"
+                            href="https://www.linkedin.com/in/duc-tue-nguyen-043008306/" target="_blank">
+                            <i class="me-0 me-md-1 fa-brands fa-linkedin" style="margin-top: 1px;"></i>
+                            <span class="d-none d-md-block">LinkeIn</span>
+                        </a>
+                        <a class="mb-2 d-inline-flex align-items-center btn btn-sm px-md-3 btn-secondary rounded-pill"
+                            href="https://github.com/NDTue" target="_blank">
+                            <i class="me-0 me-md-1 fa-brands fa-github"></i>
+                            <span class="d-none d-md-block">Github</span>
+                        </a>
+                        <a class="mb-2 d-inline-flex align-items-center btn btn-sm px-md-3 btn-danger rounded-pill"
+                            href="#">
+                            <i class="me-0 me-md-1 fa-brands fa-instagram" style="margin-top: 1px;"></i>
+                            <span class="d-none d-md-block">Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+
+    <!-- COPYRIGHT -->
+    <div class="copyright py-3">
+        <div class="container">
+            <div class="row text-center text-white small">
+                <p class="m-0 small">© 2025 - Copyright belongs to 
+                    <a class="text-decoration-none" href="https://github.com/NDTue" target="_blank">NDTue</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-5 pb-4 p-md-0 bg-black"></div>
+
+    <!-- STICKY FOOTER -->
+    <div class="sticky-footer d-block d-md-none blur-filter py-2 fixed-bottom">
+        <div class="container d-flex justify-content-center small">
+            <a class="btn-sm px-3 rounded-pill fw-semibold btn-purple text-white" href="">
+                <i class="me-1 fa-solid fa-user-check"></i>
+                Sign up for Free
+            </a>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

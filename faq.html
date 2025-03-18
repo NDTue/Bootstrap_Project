@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Thay href = "link ảnh" sẽ hiển thị ảnh trên web -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/BMO.png">
+    <!-- <link rel="stylesheet" href="./bootstrap-5.3.3/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Link Fontawsome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Bootstrap Project</title>
+</head>
+
+<body class="bg-light pt-5">
+    <!-- BEGIN NAVBAR -->
+    <nav class="fixed-top navbar navbar-expand-lg blur-filter border-bottom small">
+        <div class="container">
+            <!-- Navbar Brand -->
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/adventure-time.png" alt="logo" width="30" height="24">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Menu Item -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Search Form -->
+                <form class="d-flex mb-2 mb-lg-0" role="search">
+                    <div class="input-group">
+                        <input class="form-control form-control-sm border border-2 ps-2" type="search"
+                            placeholder="Search for anything" aria-label="Search">
+                        <button class="btn-sm btn btn-success me-2" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Sign In & Login Buttons -->
+                <!-- Sử dụng d-flex và flex-column để responsive -->
+                <div class="d-flex flex-column flex-md-row gap-2 mb-2 mb-lg-0">
+                    <a href="#!" class=" btn btn-sm btn-outline-danger fw-semibold">
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                        Log in
+                    </a>
+                    <a href="#!" class="btn-sm btn btn-danger fw-semibold ">
+                        <i class="fa-solid fa-user-plus" style="color: #ffffff;"></i>
+                        Sign up
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+
+    <!-- FAQ HEADER -->
+    <header class="py-5 border-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Col -->
+                <div class="col-md-6">
+                    <div class="breadcrumb-container">
+                        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                            aria-label="breadcrumb">
+                            <ol class="breadcrumb border rounded-pill d-inline-flex px-3 py-1 align-items-center">
+                                <li class="breadcrumb-item"><a class="text-decoration-none small" href="./index.html">Home</a></li>
+                                <li class="breadcrumb-item active small" aria-current="page">FAQ</li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                    <div class="header-content">
+                        <h1 class="fw-normal fs-3">Frontend Development using React</h1>
+                        <p class="fs-5 fw-light text-secondary">
+                            Welcome to the Frontend Development using React course! In this program, you will learn the
+                            fundamentals of frontend development and how to build web applications using the React
+                            library. <br>
+                            The course is best suitable for people with familiarity with web development.
+                        </p>
+                        <!-- Search Form -->
+                        <form class="d-flex mb-2 mb-lg-0 w-75" role="search">
+                            <div class="input-group">
+                                <input class="form-control form-control-sm border border-2 ps-2" type="search"
+                                    placeholder="Search for anything" aria-label="Search">
+                                <button class="btn-sm btn btn-success me-2" type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Right Col -->
+                <div class="col-md-6 mt-3 mt-md-0">
+                    <img class="img-fluid rounded" src="./assets/img/front-end-dev.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END CONTENT -->
+
+
+    <!-- BEGIN FAQ LIST -->
+    <section class="faq-list py-5">
+        <div class="container">
+            <div class="row">
+                <!-- List Question -->
+                <div class="col-md-8">
+                    <!-- Item 1 -->
+                    <details class="card bg-light small mb-3">
+                        <summary class="card-header">Nên chọn Tailwind CSS hay Bootstrap?</summary>
+                        <div class="card-body">
+                            <p>
+                                <li><b>Chọn Tailwind CSS:</b> Nếu bạn muốn linh hoạt và thiết kế độc đáo từ đầu.</li>
+                                <li><b>Chọn Bootstrap:</b> Nếu bạn muốn có giao diện sẵn và triển khai nhanh chóng, hoặc
+                                    làm việc trên những dự án quen thuộc cần sự nhất quán.</li>
+                            </p>
+                        </div>
+                    </details>
+                    <!-- Item 2 -->
+                    <details class="card bg-light small mb-3">
+                        <summary class="card-header">Nên học Framework nào trước?</summary>
+                        <div class="card-body">
+                            <p>
+                                <li><b>React:</b> Dành cho giao diện người dùng hiện đại.</li>
+                                <li><b>Vue.js hoặc Angular:</b> Tùy thuộc vào nhu cầu và môi trường làm việc.</li>
+                                <li>Lưu ý học cơ bản JavaScript trước khi học Framework.</li>
+                            </p>
+                        </div>
+                    </details>
+                    <!-- Item 3 -->
+                    <details class="card bg-light small mb-3">
+                        <summary class="card-header">Front-End Developer có cần biết về Back-End không?</summary>
+                        <div class="card-body">
+                            <p>
+                                Không bắt buộc, nhưng nên hiểu cơ bản:
+                                <li>Cách giao tiếp qua API (REST, GraphQL).</li>
+                                <li>Kiến thức về cơ sở dữ liệu cơ bản (MySQL, MongoDB) có thể hữu ích.</li>
+                            </p>
+                        </div>
+                    </details>
+                    <!-- Item 4 -->
+                    <details class="card bg-light small mb-3">
+                        <summary class="card-header">Có cần biết thiết kế không?</summary>
+                        <div class="card-body">
+                            <p>
+                                Không cần giỏi thiết kế, nhưng:
+                                <li>Hiểu cơ bản về UX/UI sẽ giúp bạn làm việc tốt hơn với Designer.</li>
+                                <li>Học các công cụ như Figma hoặc Sketch để hiểu ý tưởng thiết kế.</li>
+                            </p>
+                        </div>
+                    </details>
+                    <!-- Item 5 -->
+                    <details class="card bg-light small mb-3">
+                        <summary class="card-header">Làm thế nào để luyện tập hiệu quả?</summary>
+                        <div class="card-body">
+                            <p>
+                                <li>Tạo các dự án nhỏ (to-do list, trang portfolio, ứng dụng thời tiết).</li>
+                                <li>Tham gia các thử thách trên các trang như Frontend Mentor hoặc CodePen.</li>
+                                <li>Thực hành thường xuyên và cập nhật các xu hướng mới.</li>
+                            </p>
+                        </div>
+                    </details>
+                </div>
+                <!-- Post Question -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header text-bg-primary">Post your Questions</div>
+                        <div class="card-body">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-2">
+                                            <input class="form-control form-control-sm" type="text" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-2">
+                                            <input class="form-control form-control-sm" type="email"
+                                                placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="mb-2">
+                                            <input class="form-control form-control-sm" type="text"
+                                                placeholder="Your question title">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="mb-2">
+                                            <textarea class="form-control form-control-sm" rows="5"
+                                                placeholder="Question in details"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="mb-2">
+                                            <button
+                                                class="btn btn-sm btn-success text-white w-100 d-flex justify-content-center align-items-center">
+                                                <i class="fs-5 me-2 fa-solid fa-circle-question"></i>
+                                                Post Question
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END FAQ LIST -->
+
+
+    <!-- BEGIN SUBSCRIBE -->
+    <section class="subscribe py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="mb-3 mb-md-0 text-white text-center text-md-end">
+                        <h5 class="fs-4 fw-normal">Subscribe for newsletters</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <!-- Subscribe Form -->
+                    <form class="d-flex mb-2 mb-lg-0" role="search">
+                        <div class="input-group">
+                            <input type="email" class="form-control form-control-sm" placeholder="Your Email">
+                            <button type="submit" class="btn btn-sm btn-success d-inline-flex align-items-center">
+                                <i class="me-1 fa-solid fa-envelope-circle-check"></i>
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SUBSCRIBE -->
+
+
+    <!-- BEGIN FOOTER -->
+    <footer class="text-bg-dark py-5">
+        <div class="container">
+            <div class="row ">
+                <!-- Icon & Address -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="brand-icon mb-2">
+                        <img src="./assets/img/adventure-time.png" alt="">
+                    </div>
+                    <address class="small text-secondary">
+                        Hue University of Sciences,<br> Hue City, VietNam.
+                    </address>
+                    <p class="text-secondary smallsmall text-secondary">rupertinfgct@gmail.com</p>
+                </div>
+                <!-- Web Dev -->
+                <div class="col-md-2 col-sm-6">
+                    <h6 class="footer-heading">Web Development</h6>
+                    <ul class="list-unstyled small">
+                        <li class="footer-item">
+                            <a class="text-decoration-none text-secondary" href="">JavaScript</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="text-decoration-none text-secondary" href="">ReactJS</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="text-decoration-none text-secondary" href="">NodeJS</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="text-decoration-none text-secondary" href="">Bootstrap</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="text-decoration-none text-secondary" href="">MongoDB</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Data Science -->
+                <div class="col-md-2 col-sm-6">
+                    <h6 class="footer-heading">Data Science</h6>
+                    <ul class="list-unstyled small">
+                        <li class="footer-item">
+                            <a class="text-decoration-none text-secondary" href="">Python</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="text-decoration-none text-secondary" href="">Machine Learning</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="text-decoration-none text-secondary" href="">GenAI</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="text-decoration-none text-secondary" href="">Deep Learning</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Follow -->
+                <div class="col-md-5 col-sm-6">
+                    <h6 class="footer-heading">Follow Us</h6>
+                    <div class="">
+                        <a class="mb-2 d-inline-flex align-items-center btn btn-sm px-md-3 btn-info rounded-pill"
+                            href="https://www.linkedin.com/in/duc-tue-nguyen-043008306/" target="_blank">
+                            <i class="me-0 me-md-1 fa-brands fa-linkedin" style="margin-top: 1px;"></i>
+                            <span class="d-none d-md-block">LinkeIn</span>
+                        </a>
+                        <a class="mb-2 d-inline-flex align-items-center btn btn-sm px-md-3 btn-secondary rounded-pill"
+                            href="https://github.com/NDTue" target="_blank">
+                            <i class="me-0 me-md-1 fa-brands fa-github"></i>
+                            <span class="d-none d-md-block">Github</span>
+                        </a>
+                        <a class="mb-2 d-inline-flex align-items-center btn btn-sm px-md-3 btn-danger rounded-pill"
+                            href="#">
+                            <i class="me-0 me-md-1 fa-brands fa-instagram" style="margin-top: 1px;"></i>
+                            <span class="d-none d-md-block">Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+
+    <!-- COPYRIGHT -->
+    <div class="copyright py-3">
+        <div class="container">
+            <div class="row text-center text-white small">
+                <p class="m-0 small">© 2025 - Copyright belongs to
+                    <a class="text-decoration-none" href="https://github.com/NDTue" target="_blank">NDTue</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-5 pb-4 p-md-0 bg-black"></div>
+
+    <!-- STICKY FOOTER -->
+    <div class="sticky-footer d-block d-md-none blur-filter py-2 fixed-bottom">
+        <div class="container d-flex justify-content-center small">
+            <a class="btn-sm px-3 rounded-pill fw-semibold btn-purple text-white" href="">
+                <i class="me-1 fa-solid fa-user-check"></i>
+                Sign up for Free
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Link Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
